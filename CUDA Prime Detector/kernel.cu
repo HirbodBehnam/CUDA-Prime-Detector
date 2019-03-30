@@ -33,15 +33,15 @@ int main(int argc, char *argv[])
 	}
 	if(Number % 2 == 0)
 	{
-		std::cout << Number << " is NOT prime. It can be devided by 2";
+		std::cout << Number << " is NOT prime. It can be divided by 2";
 		return 0;
 	}
 	if(Number % 3 == 0)
 	{
-		std::cout << Number << " is NOT prime. It can be devided by 3";
+		std::cout << Number << " is NOT prime. It can be divided by 3";
 		return 0;
 	}
-	//Now check if number is smaller than MAX TURN; If it is compute it on cpu
+	//Now check if number is smaller than MAX TURN; If it is compute it on CPU
 	const unsigned long long TO = (unsigned long long) sqrtl((long double) Number);
 	if(Number <= MAX_TURN * 6)
 	{
@@ -50,16 +50,16 @@ int main(int argc, char *argv[])
 			if(Number % i == 0)
 			{
 				double elapsedTime = static_cast<double>(clock() - start) / CLOCKS_PER_SEC;
-				std::cout << Number << " is NOT prime. It can be devided by "<< i<<std::endl;
-				std::cout << "Calcuated in " <<elapsedTime;
+				std::cout << Number << " is NOT prime. It can be divided by "<< i<<std::endl;
+				std::cout << "Calculated in " <<elapsedTime;
 				return 0;
 			}
 			i+=2;
 			if(Number % i == 0)
 			{
 				double elapsedTime = static_cast<double>(clock() - start) / CLOCKS_PER_SEC;
-				std::cout << Number << " is NOT prime. It can be devided by "<< i <<std::endl;
-				std::cout << "Calcuated in " <<elapsedTime;
+				std::cout << Number << " is NOT prime. It can be divided by "<< i <<std::endl;
+				std::cout << "Calculated in " <<elapsedTime;
 				return 0;
 			}
 		}
@@ -109,7 +109,7 @@ END:
 	if (res == 0 || res == 1) 
 		std::cout << Number << " is PRIME." <<std::endl;
 	else 
-		std::cout << Number << " is NOT prime. It can be devided by "<< res <<std::endl;
-	std::cout << "Calcuated in " <<elapsedTime;
+		std::cout << Number << " is NOT prime. It can be divided by "<< res <<std::endl;
+	std::cout << "Calculated in " <<elapsedTime;
     return 0;
 }
