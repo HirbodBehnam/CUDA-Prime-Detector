@@ -14,6 +14,9 @@ __global__ void runTest(unsigned long long *base,unsigned long long *number, uns
 	unsigned long long index = 5 + (*base + threadIdx.x + blockIdx.x * blockDim.x) * 6;
 	if (*number % index == 0) 
 		*res = index;
+	index += 2;
+	if (*number % index == 0) 
+		*res = index;
 }
 
 int main(int argc, char *argv[])
