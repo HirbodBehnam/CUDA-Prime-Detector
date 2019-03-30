@@ -23,10 +23,9 @@ int main(int argc, char *argv[])
 {
 	if(argc != 2)
 	{
-		printf("CUDA Prime Detector v1.0.1");
-		printf("By Hirbod Behnam");
-		printf("Source: https://github.com/HirbodBehnam/CUDA-Prime-Detector");
-		printf("Usage: ProgramName.exe NUMBER_TO_TEST");
+		std::cout << "CUDA Prime Detector v1.0.1" << std::endl << "By Hirbod Behnam" << 
+			std::endl <<"Source: https://github.com/HirbodBehnam/CUDA-Prime-Detector" << std::endl
+			<< "Usage: \"CUDA Prime Detector.exe\" NUMBER_TO_TEST";
 		return 2;
 	}
 	clock_t start = clock();//Benchmark
